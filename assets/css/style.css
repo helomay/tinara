@@ -1459,3 +1459,423 @@ html {
 .team-photo-placeholder i {
     font-size: 2.4rem;
 }
+
+
+/* ==========================================================
+   ==========================================================
+   TINARA
+   MENU "QUI SOMMES NOUS ?"
+   STYLE PRINCIPAL + DESKTOP
+   ==========================================================
+   ========================================================== */
+
+
+/* ==========================================================
+   PARENT
+   ========================================================== */
+
+.navbar-custom .tinara-about-dropdown {
+    position: relative !important;
+}
+
+
+/* ==========================================================
+   BOUTON QUI SOMMES NOUS ?
+   MÊME TYPOGRAPHIE QUE LES AUTRES LIENS
+   ========================================================== */
+
+.navbar-custom .tinara-about-toggle {
+
+    position: relative !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 7px !important;
+
+    min-height: 34px !important;
+
+    margin: 0 !important;
+
+    padding: .5rem 1rem !important;
+
+    border: none !important;
+
+    border-radius: 4px !important;
+
+    background: transparent !important;
+
+    color: #ffffff !important;
+
+    font-family: 'Inter', sans-serif !important;
+
+    font-size: 11px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .5px !important;
+
+    line-height: 1.5 !important;
+
+    text-transform: uppercase !important;
+
+    text-align: center !important;
+
+    text-decoration: none !important;
+
+    text-shadow:
+        1px 1px 2px rgba(0, 0, 0, .30) !important;
+
+    white-space: nowrap !important;
+
+    cursor: pointer !important;
+
+    box-shadow: none !important;
+
+    transition:
+        background-color .20s ease,
+        color .20s ease !important;
+}
+
+
+/* ==========================================================
+   NAVBAR APRÈS SCROLL
+   ========================================================== */
+
+.navbar-custom.scrolled
+.tinara-about-toggle {
+
+    color: #333333 !important;
+
+    text-shadow: none !important;
+}
+
+
+/* ==========================================================
+   FLÈCHE
+   ========================================================== */
+
+.navbar-custom .tinara-about-chevron {
+
+    display: inline-block !important;
+
+    flex: 0 0 auto !important;
+
+    width: 7px !important;
+
+    height: 7px !important;
+
+    margin-top: -3px !important;
+
+    border-right:
+        1.5px solid currentColor !important;
+
+    border-bottom:
+        1.5px solid currentColor !important;
+
+    transform:
+        rotate(45deg) !important;
+
+    transition:
+        transform .20s ease !important;
+}
+
+
+/* ==========================================================
+   SOUS-MENU
+   ========================================================== */
+
+.navbar-custom .tinara-about-submenu {
+
+    margin: 0 !important;
+
+    padding: 6px 0 !important;
+
+    list-style: none !important;
+
+    background: #ffffff !important;
+
+    border: none !important;
+
+    border-top:
+        3px solid #008678 !important;
+
+    border-radius:
+        0 0 7px 7px !important;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, .13) !important;
+}
+
+
+/* ==========================================================
+   ITEMS DU SOUS-MENU
+   ========================================================== */
+
+.navbar-custom
+.tinara-about-submenu > li {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    list-style: none !important;
+}
+
+
+/* ==========================================================
+   LIENS DU SOUS-MENU
+   MÊME POLICE QUE LE MENU PRINCIPAL
+   ========================================================== */
+
+.navbar-custom
+.tinara-about-submenu-link {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    width: 100% !important;
+
+    min-height: 40px !important;
+
+    margin: 0 !important;
+
+    padding: 10px 17px !important;
+
+    background: #ffffff !important;
+
+    color: #333333 !important;
+
+    font-family: 'Inter', sans-serif !important;
+
+    font-size: 11px !important;
+
+    font-weight: 600 !important;
+
+    letter-spacing: .5px !important;
+
+    line-height: 1.5 !important;
+
+    text-transform: uppercase !important;
+
+    text-decoration: none !important;
+
+    text-shadow: none !important;
+
+    white-space: nowrap !important;
+
+    transition:
+        background-color .18s ease,
+        color .18s ease !important;
+}
+
+
+/* ==========================================================
+   HOVER LIENS DU SOUS-MENU
+   ========================================================== */
+
+.navbar-custom
+.tinara-about-submenu-link:hover,
+
+.navbar-custom
+.tinara-about-submenu-link:focus {
+
+    background-color: #008678 !important;
+
+    color: #ffffff !important;
+
+    outline: none !important;
+}
+
+
+/* ==========================================================
+   ==========================================================
+   DESKTOP
+   OUVERTURE AUTOMATIQUE AU SURVOL
+   ==========================================================
+   ========================================================== */
+
+@media (min-width: 992px) {
+
+
+    /* ======================================================
+       IMPORTANT
+       Neutralise Bootstrap Collapse uniquement sur desktop.
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu.collapse {
+
+        display: block !important;
+
+        height: auto !important;
+
+        position: absolute !important;
+
+        top: calc(100% + 1px) !important;
+
+        left: 0 !important;
+
+        right: auto !important;
+
+        z-index: 10050 !important;
+
+        min-width: 220px !important;
+
+        opacity: 0 !important;
+
+        visibility: hidden !important;
+
+        pointer-events: none !important;
+
+        transform:
+            translateY(6px) !important;
+
+        transition:
+            opacity .16s ease,
+            visibility .16s ease,
+            transform .16s ease !important;
+    }
+
+
+    /*
+     * Bootstrap peut ajouter .show.
+     * Sur desktop cela ne change rien :
+     * le hover reste la référence.
+     */
+
+    .navbar-custom
+    .tinara-about-submenu.collapse.show {
+
+        display: block !important;
+    }
+
+
+    /* ======================================================
+       OUVERTURE AUTOMATIQUE
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-dropdown:hover
+    > .tinara-about-submenu,
+
+    .navbar-custom
+    .tinara-about-dropdown:focus-within
+    > .tinara-about-submenu {
+
+        opacity: 1 !important;
+
+        visibility: visible !important;
+
+        pointer-events: auto !important;
+
+        transform:
+            translateY(0) !important;
+    }
+
+
+    /* ======================================================
+       PARENT VERT AU SURVOL
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-dropdown:hover
+    > .tinara-about-toggle,
+
+    .navbar-custom
+    .tinara-about-dropdown:focus-within
+    > .tinara-about-toggle {
+
+        background-color:
+            #008678 !important;
+
+        color:
+            #ffffff !important;
+
+        text-shadow:
+            none !important;
+    }
+
+
+    /* ======================================================
+       ROTATION FLÈCHE
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-dropdown:hover
+    .tinara-about-chevron,
+
+    .navbar-custom
+    .tinara-about-dropdown:focus-within
+    .tinara-about-chevron {
+
+        transform:
+            translateY(3px)
+            rotate(225deg) !important;
+    }
+
+
+    /* ======================================================
+       PONT INVISIBLE
+       EMPÊCHE LE MENU DE SE REFERMER
+       quand la souris descend vers le sous-menu
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-dropdown::after {
+
+        content: "";
+
+        position: absolute;
+
+        top: 100%;
+
+        left: 0;
+
+        right: 0;
+
+        height: 12px;
+
+        z-index: 10049;
+    }
+
+
+    /* ======================================================
+       NAVBAR TRANSPARENTE
+       Le dropdown reste toujours blanc
+       ====================================================== */
+
+    .navbar-custom:not(.scrolled)
+    .tinara-about-submenu {
+
+        background:
+            #ffffff !important;
+    }
+
+
+    .navbar-custom:not(.scrolled)
+    .tinara-about-submenu-link {
+
+        color:
+            #333333 !important;
+
+        text-shadow:
+            none !important;
+    }
+
+
+    .navbar-custom:not(.scrolled)
+    .tinara-about-submenu-link:hover {
+
+        color:
+            #ffffff !important;
+    }
+}

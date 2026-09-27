@@ -623,3 +623,506 @@ display: none;
         font-size: 0.82rem;
     }
 }
+
+
+/* ==========================================================
+   ==========================================================
+   TINARA
+   MENU QUI SOMMES NOUS
+   TABLETTE + MOBILE
+   ==========================================================
+   ========================================================== */
+
+@media (max-width: 991.98px) {
+
+
+    /* ======================================================
+       PANNEAU PRINCIPAL MOBILE
+       ====================================================== */
+
+    .navbar-custom
+    .navbar-collapse {
+
+        overflow-x:
+            hidden !important;
+
+        overflow-y:
+            auto !important;
+
+        max-height:
+            calc(100vh - 90px) !important;
+    }
+
+
+    /* ======================================================
+       PARENT
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-dropdown {
+
+        position:
+            relative !important;
+
+        display:
+            block !important;
+
+        width:
+            100% !important;
+
+        margin:
+            0 !important;
+
+        padding:
+            0 !important;
+    }
+
+
+    /* ======================================================
+       QUI SOMMES NOUS ?
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-toggle {
+
+        position:
+            relative !important;
+
+        display:
+            flex !important;
+
+        align-items:
+            center !important;
+
+        justify-content:
+            center !important;
+
+        width:
+            100% !important;
+
+        min-height:
+            48px !important;
+
+        margin:
+            0 !important;
+
+        padding:
+            .5rem 42px !important;
+
+        border:
+            none !important;
+
+        border-radius:
+            4px !important;
+
+        background:
+            transparent !important;
+
+        color:
+            #333333 !important;
+
+        /*
+         * Même typographie que les autres
+         * éléments du menu.
+         */
+
+        font-family:
+            'Inter',
+            sans-serif !important;
+
+        font-size:
+            11px !important;
+
+        font-weight:
+            600 !important;
+
+        letter-spacing:
+            .5px !important;
+
+        line-height:
+            1.5 !important;
+
+        text-transform:
+            uppercase !important;
+
+        text-align:
+            center !important;
+
+        text-shadow:
+            1px 1px 2px
+            rgba(0,0,0,.3) !important;
+
+        white-space:
+            nowrap !important;
+
+        cursor:
+            pointer !important;
+
+        box-shadow:
+            none !important;
+    }
+
+
+    .navbar-custom
+    .tinara-about-toggle:focus {
+
+        outline:
+            none !important;
+
+        box-shadow:
+            none !important;
+    }
+
+
+    /* ======================================================
+       FLÈCHE
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-chevron {
+
+        position:
+            absolute !important;
+
+        top:
+            50% !important;
+
+        right:
+            18px !important;
+
+        width:
+            7px !important;
+
+        height:
+            7px !important;
+
+        margin:
+            0 !important;
+
+        border-right:
+            1.5px solid currentColor !important;
+
+        border-bottom:
+            1.5px solid currentColor !important;
+
+        transform:
+            translateY(-70%)
+            rotate(45deg) !important;
+
+        transition:
+            transform .20s ease !important;
+    }
+
+
+    /* ======================================================
+       SOUS-MENU MOBILE
+       Bootstrap Collapse
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu {
+
+        position:
+            static !important;
+
+        float:
+            none !important;
+
+        width:
+            100% !important;
+
+        min-width:
+            0 !important;
+
+        margin:
+            0 0 8px !important;
+
+        padding:
+            6px 0 !important;
+
+        list-style:
+            none !important;
+
+        background:
+            #f7faf9 !important;
+
+        border:
+            none !important;
+
+        border-top:
+            2px solid
+            rgba(0,134,120,.22) !important;
+
+        border-radius:
+            0 !important;
+
+        box-shadow:
+            none !important;
+
+        opacity:
+            1 !important;
+
+        visibility:
+            visible !important;
+
+        transform:
+            none !important;
+    }
+
+
+    /* ======================================================
+       FERMÉ
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu.collapse:not(.show) {
+
+        display:
+            none !important;
+    }
+
+
+    /* ======================================================
+       OUVERT
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu.collapse.show {
+
+        display:
+            block !important;
+    }
+
+
+    /* ======================================================
+       DURANT L'ANIMATION BOOTSTRAP
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu.collapsing {
+
+        position:
+            static !important;
+
+        height:
+            0;
+
+        overflow:
+            hidden !important;
+
+        transition:
+            height .25s ease !important;
+    }
+
+
+    /* ======================================================
+       PARENT QUAND SOUS-MENU OUVERT
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-toggle[aria-expanded="true"] {
+
+        color:
+            #008678 !important;
+
+        text-shadow:
+            none !important;
+    }
+
+
+    /* ======================================================
+       FLÈCHE OUVERTE
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-toggle[aria-expanded="true"]
+    .tinara-about-chevron {
+
+        transform:
+            translateY(-30%)
+            rotate(225deg) !important;
+    }
+
+
+    /* ======================================================
+       ITEMS
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu > li {
+
+        display:
+            block !important;
+
+        width:
+            100% !important;
+
+        margin:
+            0 !important;
+
+        padding:
+            0 !important;
+
+        list-style:
+            none !important;
+    }
+
+
+    /* ======================================================
+       LIENS DU SOUS-MENU
+       EXACTEMENT MÊME TYPO
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu-link {
+
+        display:
+            flex !important;
+
+        align-items:
+            center !important;
+
+        justify-content:
+            center !important;
+
+        width:
+            100% !important;
+
+        min-height:
+            46px !important;
+
+        margin:
+            0 !important;
+
+        padding:
+            .5rem 15px !important;
+
+        border:
+            none !important;
+
+        border-radius:
+            0 !important;
+
+        background:
+            transparent !important;
+
+        color:
+            #333333 !important;
+
+        font-family:
+            'Inter',
+            sans-serif !important;
+
+        /*
+         * Plus de 9.5px ou 10px.
+         * On garde exactement 11px.
+         */
+
+        font-size:
+            11px !important;
+
+        font-weight:
+            600 !important;
+
+        letter-spacing:
+            .5px !important;
+
+        line-height:
+            1.5 !important;
+
+        text-transform:
+            uppercase !important;
+
+        text-align:
+            center !important;
+
+        text-decoration:
+            none !important;
+
+        text-shadow:
+            1px 1px 2px
+            rgba(0,0,0,.3) !important;
+
+        white-space:
+            nowrap !important;
+
+        transition:
+            background-color .18s ease,
+            color .18s ease !important;
+    }
+
+
+    /* ======================================================
+       HOVER / TAP
+       ====================================================== */
+
+    .navbar-custom
+    .tinara-about-submenu-link:hover,
+
+    .navbar-custom
+    .tinara-about-submenu-link:focus,
+
+    .navbar-custom
+    .tinara-about-submenu-link:active {
+
+        background:
+            #008678 !important;
+
+        color:
+            #ffffff !important;
+
+        text-shadow:
+            none !important;
+    }
+}
+
+
+/* ==========================================================
+   PETITS MOBILES
+   ========================================================== */
+
+@media (max-width: 480px) {
+
+    /*
+     * On NE réduit PLUS la taille du texte.
+     * Tout reste à 11px comme les autres menus.
+     */
+
+    .navbar-custom
+    .tinara-about-toggle {
+
+        min-height:
+            44px !important;
+
+        padding-left:
+            35px !important;
+
+        padding-right:
+            35px !important;
+
+        font-size:
+            11px !important;
+    }
+
+
+    .navbar-custom
+    .tinara-about-submenu-link {
+
+        min-height:
+            42px !important;
+
+        padding:
+            .5rem 10px !important;
+
+        font-size:
+            11px !important;
+    }
+
+
+    .navbar-custom
+    .tinara-about-chevron {
+
+        right:
+            12px !important;
+    }
+}

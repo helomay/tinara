@@ -1,28 +1,256 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top navbar-custom shadow-sm py-3">
+
     <div class="container-fluid">
+
+        <!-- ==================================================
+             LOGO
+             ================================================== -->
+
         <a class="navbar-brand" href="/">
-            <img src="/assets/images/logo-tinara.png" height="50" alt="TINARA" class="d-inline-block align-top">
+            <img
+                src="/assets/images/logo-tinara.png"
+                height="50"
+                alt="TINARA"
+                class="d-inline-block align-top"
+            >
         </a>
 
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+
+        <!-- ==================================================
+             MENU MOBILE
+             ================================================== -->
+
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navMain"
+            aria-controls="navMain"
+            aria-expanded="false"
+            aria-label="Ouvrir le menu"
+        >
             <span class="navbar-toggler-icon-custom">
                 <i class="fas fa-bars"></i>
             </span>
         </button>
 
+
+        <!-- ==================================================
+             NAVIGATION
+             ================================================== -->
+
         <div class="collapse navbar-collapse" id="navMain">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fw-bold" style="font-size: 0.9rem;">
-                <li class="nav-item"><a class="nav-link px-3" href="/#mission">Notre mission</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/#orphelinat">L'orphelinat</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/#actions">Nos actions</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/actualites/"> Nos actualités</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/#contact">Contact</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/about/">À propos</a></li>
-                <li class="nav-item"><a class="nav-link px-3" href="/faq/">FAQ</a></li>
-                <li class="nav-item nav-cta-group"><a href="/parrainage/" class="btn btn-primary btn-sm px-4 rounded-pill shadow-sm">JE PARRAINE <i class="fa fa-heart ms-2"></i></a></li>
-                <li class="nav-item nav-cta-group"><a href="/dons/" class="btn btn-secondary btn-sm px-4 rounded-pill shadow-sm">FAIRE UN DON <i class="fas fa-hand-holding-heart ms-2"></i></a></li>
-                <li class="nav-item nav-cta-group"><a href="/aider/" class="btn btn-outline-dark btn-sm px-3 rounded-pill">AIDER AUTREMENT <i class="fa fa-hand-holding-hand ms-2"> </i></a></li>
+
+            <ul
+                class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase fw-bold align-items-lg-center"
+                style="font-size: 0.9rem;"
+            >
+
+
+                <!-- ==========================================
+                     QUI SOMMES NOUS ?
+                     ========================================== -->
+
+                <li class="nav-item tinara-about-dropdown">
+
+                    <button
+                        type="button"
+                        class="tinara-about-toggle px-3"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#tinaraAboutSubmenu"
+                        aria-expanded="false"
+                        aria-controls="tinaraAboutSubmenu"
+                    >
+                        <span class="tinara-about-label">
+                            QUI SOMMES NOUS ?
+                        </span>
+
+                        <span
+                            class="tinara-about-chevron"
+                            aria-hidden="true"
+                        ></span>
+                    </button>
+
+
+                    <ul
+                        class="tinara-about-submenu collapse"
+                        id="tinaraAboutSubmenu"
+                    >
+
+                        <li>
+                            <a
+                                href="/about/"
+                                class="tinara-about-submenu-link"
+                            >
+                                À PROPOS
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="/#mission"
+                                class="tinara-about-submenu-link"
+                            >
+                                NOTRE MISSION
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="/#orphelinat"
+                                class="tinara-about-submenu-link"
+                            >
+                                L'ORPHELINAT
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- ==========================================
+                     NOS ACTIONS
+                     ========================================== -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link px-3"
+                        href="/#actions"
+                    >
+                        NOS ACTIONS
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     NOS ACTUALITÉS
+                     ========================================== -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link px-3"
+                        href="/actualites/"
+                    >
+                        NOS ACTUALITÉS
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     BOUTIQUE SOLIDAIRE
+                     ========================================== -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link px-3"
+                        href="https://shop.tinara-association.com/boutique/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        BOUTIQUE SOLIDAIRE
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     CONTACT
+                     ========================================== -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link px-3"
+                        href="/#contact"
+                    >
+                        CONTACT
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     FAQ
+                     ========================================== -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link px-3"
+                        href="/faq/"
+                    >
+                        FAQ
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     JE PARRAINE
+                     ICÔNE CONSERVÉE
+                     ========================================== -->
+
+                <li class="nav-item nav-cta-group">
+
+                    <a
+                        href="/parrainage/"
+                        class="btn btn-primary btn-sm px-4 rounded-pill shadow-sm"
+                    >
+                        JE PARRAINE
+
+                        <i class="fa fa-heart ms-2"></i>
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     FAIRE UN DON
+                     ICÔNE CONSERVÉE
+                     ========================================== -->
+
+                <li class="nav-item nav-cta-group">
+
+                    <a
+                        href="/dons/"
+                        class="btn btn-secondary btn-sm px-4 rounded-pill shadow-sm"
+                    >
+                        FAIRE UN DON
+
+                        <i class="fas fa-hand-holding-heart ms-2"></i>
+                    </a>
+
+                </li>
+
+
+                <!-- ==========================================
+                     AIDER AUTREMENT
+                     ICÔNE CONSERVÉE
+                     ========================================== -->
+
+                <li class="nav-item nav-cta-group">
+
+                    <a
+                        href="/aider/"
+                        class="btn btn-outline-dark btn-sm px-3 rounded-pill"
+                    >
+                        AIDER AUTREMENT
+
+                        <i class="fa fa-hand-holding-hand ms-2"></i>
+                    </a>
+
+                </li>
+
             </ul>
+
         </div>
+
     </div>
+
 </nav>
